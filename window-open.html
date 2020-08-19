@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script>
+function wo() {
+	window.open("https://www.google.com")
+}
+function wob() {
+	window.open("https://www.google.com", "_blank")
+}
+function openInNewTab() {
+  Object.assign(document.createElement('a'), {
+    target: '_blank',
+    href: "https://www.google.com",
+  }).click();
+}
+</script>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<input type="button" value="Window Open" onclick="wo()" />
+
+<input type="button" value="Window Open _blank" onclick="wob()" />
+
+<input type="button" value="Window Open by a tag" onclick="openInNewTab()" />
+
+</body>
+</html>
